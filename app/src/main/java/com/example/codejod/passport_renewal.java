@@ -35,8 +35,8 @@ public class passport_renewal extends AppCompatActivity {
     Uri imageUri ;
     FirebaseStorage firebaseStorage;
     StorageReference storageReference;
-    EditText passportNumber;
     ProgressBar pbar;
+    EditText pn;
 
 
 
@@ -51,7 +51,7 @@ public class passport_renewal extends AppCompatActivity {
         conti=findViewById(R.id.cont);
         firebaseStorage=FirebaseStorage.getInstance();
         storageReference=firebaseStorage.getReference();
-        passportNumber=(EditText)findViewById(R.id.pass_num);
+        pn=findViewById(R.id.pass_num);
         pbar=findViewById(R.id.progressBar4);
 
         intentBTn.setOnClickListener(new View.OnClickListener() {
@@ -64,19 +64,16 @@ public class passport_renewal extends AppCompatActivity {
         });
 
         applyBtn.setOnClickListener(new View.OnClickListener() {
-            final String passportNum=passportNumber.getText().toString();
+            final String passportNum=pn.getText().toString();
             @Override
             public void onClick(View v) {
-                if(TextUtils.isEmpty(passportNum)){
-                    passportNumber.setError("Passport Number in required");
-                }
                 uploadImage();
 
             }
 
 
             private void uploadImage() {
-                String uid=passportNumber.getText().toString();
+                String uid=pn.getText().toString();
                 final ProgressDialog pd= new ProgressDialog(passport_renewal.this);
                 pd.setTitle("Submitting your application");
                 pd.show();

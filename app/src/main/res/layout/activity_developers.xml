@@ -99,23 +99,23 @@
         android:layout_width="71dp"
         android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242"
+        app:layout_constraintVertical_bias="0.261"
         app:srcCompat="@drawable/ic_baseline_android_24" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="199dp"
-        android:layout_height="144dp"
+        android:layout_width="150dp"
+        android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021"
+        app:layout_constraintVertical_bias="0.02"
         app:srcCompat="@drawable/l5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

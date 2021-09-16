@@ -57,6 +57,7 @@ public class welcomePage extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             pbar3.setVisibility(View.VISIBLE);
                         }
+
                         else if (type.equals(admin)){
                             startActivity(new Intent(getApplicationContext(), AdminSide.class));
                             pbar3.setVisibility(View.VISIBLE);
