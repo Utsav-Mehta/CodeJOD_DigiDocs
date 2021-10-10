@@ -19,11 +19,29 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.Objects;
 
+/**
+ * The type Welcome page.
+ */
 public class welcomePage extends AppCompatActivity {
+    /**
+     * The Cont btn.
+     */
     Button contBtn;
+    /**
+     * The Fbase auth.
+     */
     FirebaseAuth fbaseAuth;
+    /**
+     * The User id.
+     */
     String userId;
+    /**
+     * The Fstore.
+     */
     FirebaseFirestore fstore;
+    /**
+     * The Pbar 3.
+     */
     ProgressBar pbar3;
 
     @Override

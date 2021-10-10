@@ -12,8 +12,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+/**
+ * The type Admin verify.
+ */
 public class AdminVerify extends AppCompatActivity {
+    /**
+     * The Verify.
+     */
     Button verify;
+    /**
+     * The Report.
+     */
     Button report;
 
     @Override

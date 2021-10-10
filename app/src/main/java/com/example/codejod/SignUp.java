@@ -30,13 +30,46 @@ import java.util.Objects;
 
 import static android.content.ContentValues.TAG;
 
+/**
+ * The type Sign up.
+ */
 public class SignUp extends AppCompatActivity {
-    EditText username,email,password,phone;
+    /**
+     * The Username.
+     */
+    EditText username, /**
+     * The Email.
+     */
+    email, /**
+     * The Password.
+     */
+    password, /**
+     * The Phone.
+     */
+    phone;
+    /**
+     * The Signupbtn.
+     */
     Button signupbtn;
+    /**
+     * The Logintext.
+     */
     TextView logintext;
+    /**
+     * The F auth.
+     */
     FirebaseAuth fAuth;
+    /**
+     * The F store.
+     */
     FirebaseFirestore fStore;
+    /**
+     * The Pbar.
+     */
     ProgressBar pbar;
+    /**
+     * The User id.
+     */
     String userID;
 
 
@@ -53,7 +86,6 @@ public class SignUp extends AppCompatActivity {
         phone=findViewById(R.id.phone);
 
 
-
         fAuth= FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();
         pbar=findViewById(R.id.progressBar);
@@ -62,7 +94,6 @@ public class SignUp extends AppCompatActivity {
         if(fAuth.getCurrentUser() !=null){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
             finish();
-
         }
         logintext.setOnClickListener(new View.OnClickListener() {
             @Override

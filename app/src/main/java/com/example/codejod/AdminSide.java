@@ -26,12 +26,33 @@ import java.io.IOException;
 import java.util.Base64;
 
 
+/**
+ * The type Admin side.
+ */
 public class AdminSide extends AppCompatActivity {
+    /**
+     * The Img.
+     */
     ImageView img;
+    /**
+     * The Btn.
+     */
     Button btn;
+    /**
+     * The Firebase storage.
+     */
     FirebaseStorage firebaseStorage;
+    /**
+     * The Sr.
+     */
     StorageReference sr;
+    /**
+     * The Img id.
+     */
     EditText imgId;
+    /**
+     * The Go btn.
+     */
     Button goBtn;
 
     @Override

@@ -28,17 +28,36 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+/**
+ * The type Passport renewal.
+ */
 public class passport_renewal extends AppCompatActivity {
     private ImageView profileIv;
     private Button intentBTn,conti;
+    /**
+     * The Apply btn.
+     */
     Button applyBtn;
+    /**
+     * The Image uri.
+     */
     Uri imageUri ;
+    /**
+     * The Firebase storage.
+     */
     FirebaseStorage firebaseStorage;
+    /**
+     * The Storage reference.
+     */
     StorageReference storageReference;
+    /**
+     * The Pbar.
+     */
     ProgressBar pbar;
+    /**
+     * The Pn.
+     */
     EditText pn;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,6 +125,9 @@ public class passport_renewal extends AppCompatActivity {
 
     }
 
+    /**
+     * The Gallery activity result launcher.
+     */
     public ActivityResultLauncher<Intent> galleryActivityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {

@@ -19,13 +19,37 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+/**
+ * The type Login.
+ */
 public class Login extends AppCompatActivity {
 
-    EditText mail,passcode;
+    /**
+     * The Mail.
+     */
+    EditText mail, /**
+     * The Passcode.
+     */
+    passcode;
+    /**
+     * The Login btn.
+     */
     Button loginBtn;
+    /**
+     * The Register txt.
+     */
     TextView registerTxt;
+    /**
+     * The Firebase auth.
+     */
     FirebaseAuth firebaseAuth;
+    /**
+     * The Fstore.
+     */
     FirebaseFirestore fstore;
+    /**
+     * The Pbar 2.
+     */
     ProgressBar pbar2;
 
 
@@ -33,7 +57,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         firebaseAuth=FirebaseAuth.getInstance();
         mail=findViewById(R.id.logInMailID);
         passcode=findViewById(R.id.userpassword);

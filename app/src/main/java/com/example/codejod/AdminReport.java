@@ -12,8 +12,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * The type Admin report.
+ */
 public class AdminReport extends AppCompatActivity {
+    /**
+     * The Repo.
+     */
     Button repo;
+    /**
+     * The Notice n.
+     */
     EditText noticeN;
 
     @Override

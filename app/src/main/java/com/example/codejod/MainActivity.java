@@ -16,12 +16,33 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    /**
+     * The Drawer layout.
+     */
     DrawerLayout drawerLayout;
+    /**
+     * The Navigation view.
+     */
     NavigationView navigationView;
+    /**
+     * The Menu icon.
+     */
     ImageView menuIcon;
+    /**
+     * The Content view.
+     */
     LinearLayout contentView;
+    /**
+     * The Logout.
+     */
     MenuItem logout;
+    /**
+     * The Fbase auth.
+     */
     FirebaseAuth fbaseAuth;
 
 

@@ -8,8 +8,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * The type Developers.
+ */
 public class Developers extends AppCompatActivity {
-    TextView kev,uts;
+    /**
+     * The Kev.
+     */
+    TextView kev, /**
+     * The Uts.
+     */
+    uts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
